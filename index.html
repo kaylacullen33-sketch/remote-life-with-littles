@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,148 +9,330 @@
 
 <style>
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  text-align: center;
-  margin: 0;
+*{
+box-sizing:border-box;
 }
 
-/* Header */
-
-header {
-  background: white;
-  padding: 20px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f6f7fb;
+color:#222;
 }
 
-h1 {
-  margin: 0;
-  color: #333;
+/* HEADER */
+
+header{
+background:white;
+padding:40px 20px;
+text-align:center;
+border-bottom:1px solid #e6e6e6;
 }
 
-.tagline {
-  color: #777;
+header h1{
+margin:0;
+font-size:32px;
 }
 
-/* Job Cards */
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+header p{
+margin-top:10px;
+color:#666;
 }
 
-.job {
-  background: white;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+/* CONTAINER */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
 }
 
-.job h2 {
-  margin-top: 0;
+/* INTRO */
+
+.intro{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 16px rgba(0,0,0,0.08);
+margin-bottom:35px;
+text-align:center;
 }
 
-.apply {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  background: #4CAF50;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+.intro p{
+color:#555;
+line-height:1.6;
 }
 
-.apply:hover {
-  background: #45a049;
+/* CATEGORY BUTTONS */
+
+.categories{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+margin-bottom:40px;
 }
 
-/* Email signup */
-
-.email-box {
-  background: white;
-  padding: 30px;
-  margin: 40px 0;
-  border-radius: 10px;
+.category{
+background:#eef2ff;
+padding:10px 18px;
+border-radius:30px;
+font-size:14px;
+color:#444;
 }
 
-input {
-  padding: 10px;
-  width: 250px;
+/* JOB GRID */
+
+.jobs{
+display:grid;
+grid-template-columns:1fr;
+gap:25px;
 }
 
-button {
-  padding: 10px 20px;
-  background: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
+/* JOB CARD */
+
+.job{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 6px 16px rgba(0,0,0,0.08);
+text-align:center;
 }
 
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  color: #777;
+.job h2{
+margin-top:0;
+}
+
+.job-meta{
+color:#777;
+margin-bottom:12px;
+}
+
+.status{
+display:inline-block;
+background:#4CAF50;
+color:white;
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+margin-bottom:12px;
+}
+
+.apply{
+display:inline-block;
+margin-top:10px;
+padding:12px 24px;
+background:#4CAF50;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.apply:hover{
+background:#43a047;
+}
+
+/* RESUME SECTION */
+
+.resume{
+background:white;
+margin-top:40px;
+padding:30px;
+border-radius:12px;
+box-shadow:0 6px 16px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+/* EMAIL */
+
+.email{
+background:white;
+margin-top:40px;
+padding:30px;
+border-radius:12px;
+box-shadow:0 6px 16px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.email input{
+padding:12px;
+width:250px;
+border-radius:8px;
+border:1px solid #ccc;
+margin-bottom:10px;
+}
+
+.email button{
+padding:12px 20px;
+background:#4CAF50;
+border:none;
+color:white;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+margin-top:50px;
+padding:25px;
+color:#777;
+border-top:1px solid #e6e6e6;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
+
 <h1>Remote Life With Littles</h1>
-<p class="tagline">Helping parents find legitimate work-from-home jobs.</p>
+
+<p>Helping parents and job seekers find legitimate remote jobs.</p>
+
 </header>
 
 <div class="container">
 
-<!-- JOB 1 -->
+<div class="intro">
+
+<p>
+Browse open remote jobs in customer service, chat support, sales,
+account management, customer success, data entry, and IT.
+Jobs stay posted until the position closes.
+</p>
+
+</div>
+
+<div class="categories">
+
+<div class="category">Customer Service</div>
+<div class="category">Chat Support</div>
+<div class="category">Sales</div>
+<div class="category">Account Management</div>
+<div class="category">Customer Success</div>
+<div class="category">Data Entry</div>
+<div class="category">IT / Tech</div>
+
+</div>
+
+<div class="jobs">
 
 <div class="job">
+
+<div class="status">Open</div>
+
 <h2>Customer Support Representative</h2>
-<p>Remote | Full Time</p>
-<a class="apply" href="#">Apply Here</a>
+
+<p class="job-meta">Remote | Full Time</p>
+
+<a class="apply" href="#" target="_blank">Apply Here</a>
+
 </div>
 
-<!-- JOB 2 -->
 
 <div class="job">
+
+<div class="status">Open</div>
+
 <h2>Chat Support Agent</h2>
-<p>Remote | Work From Home</p>
-<a class="apply" href="#">Apply Here</a>
+
+<p class="job-meta">Remote | Work From Home</p>
+
+<a class="apply" href="#" target="_blank">Apply Here</a>
+
 </div>
 
-<!-- JOB 3 -->
 
 <div class="job">
+
+<div class="status">Open</div>
+
 <h2>Data Entry Specialist</h2>
-<p>Remote | Entry Level</p>
-<a class="apply" href="#">Apply Here</a>
+
+<p class="job-meta">Remote | Entry Level</p>
+
+<a class="apply" href="#" target="_blank">Apply Here</a>
+
 </div>
 
-<!-- EMAIL LIST -->
 
-<div class="email-box">
-<h2>Get New Remote Jobs Weekly</h2>
-<p>Join the email list so you don't miss new job postings.</p>
+<div class="job">
+
+<div class="status">Open</div>
+
+<h2>Account Manager</h2>
+
+<p class="job-meta">Remote | Full Time</p>
+
+<a class="apply" href="#" target="_blank">Apply Here</a>
+
+</div>
+
+
+<div class="job">
+
+<div class="status">Open</div>
+
+<h2>Customer Success Manager</h2>
+
+<p class="job-meta">Remote | Full Time</p>
+
+<a class="apply" href="#" target="_blank">Apply Here</a>
+
+</div>
+
+
+<div class="job">
+
+<div class="status">Open</div>
+
+<h2>Remote Sales Representative</h2>
+
+<p class="job-meta">Remote | Full Time</p>
+
+<a class="apply" href="#" target="_blank">Apply Here</a>
+
+</div>
+
+</div>
+
+<div class="resume">
+
+<h2>Resume Templates</h2>
+
+<p>
+Need help applying? Add your resume templates here for
+customer service, remote work, chat support, and other roles.
+</p>
+
+</div>
+
+<div class="email">
+
+<h2>Get Remote Jobs Weekly</h2>
+
+<p>Join the email list to receive new job leads.</p>
 
 <input type="email" placeholder="Enter your email">
+
+<br>
+
 <button>Subscribe</button>
+
 </div>
 
 </div>
 
 <footer>
+
 <p>© 2026 Remote Life With Littles</p>
+
 </footer>
 
 </body>
 </html>
-      </footer>
-    </div>
-  );
-}
